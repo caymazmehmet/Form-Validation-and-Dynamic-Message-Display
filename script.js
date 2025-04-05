@@ -10,6 +10,7 @@ let mailValue = inMail.ariaValueMax;
 let elements = "";
 
 submitBtn.addEventListener("click", function () {
+  event.preventDefault();
   if (!inMail.value.includes("@")) {
     alert("Your mail must contain '@'");
     return;
